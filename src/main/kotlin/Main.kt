@@ -7,7 +7,7 @@ fun main () {
         println(" 덧셈(+), 뺄셈(-), 곱셈(*), 나눗셈(/), 나누기 (%) 중 하나만 가능합니다. ex) 5 + 12 , 종료하시겠습니까? 'exit' ")
         val input = readLine()
 
-        if (input.equals("exit", true)) {
+        if (input == "exit") {
             println("프로그램 종료!")
             break
         }
