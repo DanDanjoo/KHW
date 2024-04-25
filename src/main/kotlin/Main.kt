@@ -4,7 +4,7 @@ fun main () {
     val calculator = Calculator()
 
     while(true) {
-        println(" 덧셈(+), 뺄셈(-), 곱셈(*), 나눗셈(/) 중 하나만 가능합니다. ex) 5 + 12 , 종료하시겠습니까? 'exit' ")
+        println(" 덧셈(+), 뺄셈(-), 곱셈(*), 나눗셈(/), 나누기 (%) 중 하나만 가능합니다. ex) 5 + 12 , 종료하시겠습니까? 'exit' ")
         val input = readLine()
 
         if (input.equals("exit", true)) {
@@ -43,8 +43,9 @@ class Calculator {
             "-" -> amu1 - amu2
             "*" -> amu1 * amu2
             "/" -> amu1 / amu2
+            "%" -> amu1 % amu2
             else -> {
-                println("죄송합니다. 연산은 네가지만 가능합니다. ")
+                println("죄송합니다. 연산은 다섯가지만 가능합니다. ")
                 null
             }
 
